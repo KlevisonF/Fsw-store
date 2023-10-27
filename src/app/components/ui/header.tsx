@@ -1,4 +1,11 @@
-import { HomeIcon, ListOrderedIcon, LogInIcon, MenuIcon, PercentCircle,  ShoppingCartIcon } from "lucide-react";
+import {
+  HomeIcon,
+  ListOrderedIcon,
+  LogInIcon,
+  MenuIcon,
+  PercentCircle,
+  ShoppingCartIcon,
+} from "lucide-react";
 import { Button } from "./button";
 import { Card } from "./card";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../ui/sheet";
@@ -15,31 +22,28 @@ const Header = () => {
         <SheetContent side="left">
           <SheetHeader className="text-left text-lg font-semibold">
             Menu
-            </SheetHeader>
-           <div className="mt-2 flex flex-col gap-4">
+          </SheetHeader>
+          <div className="mt-2 flex flex-col gap-4">
+            <Button variant="outline" className="w-full justify-start gap-2">
+              <LogInIcon size={16} />
+              Fazer Login
+            </Button>
 
-           <Button variant="outline" className="w-full justify-start gap-2">
-            <LogInIcon size={16}/>
-            Fazer Login
-           
-           </Button>
+            <Button variant="outline" className="w-full justify-start gap-2">
+              <HomeIcon size={16} />
+              Inicio
+            </Button>
 
-           <Button variant="outline" className="w-full justify-start gap-2">
-           <HomeIcon size={16}/>
-            Inicio
-           </Button>
+            <Button variant="outline" className="w-full justify-start gap-2">
+              <PercentCircle size={16} />
+              Ofertas
+            </Button>
 
-           <Button variant="outline" className="w-full justify-start gap-2">
-           <PercentCircle size={16}/>
-            Ofertas
-           </Button>
-
-           <Button variant="outline" className="w-full justify-start gap-2">
-           <ListOrderedIcon size={16}/>
-            Catálogo
-           </Button>
-           
-           </div>
+            <Button variant="outline" className="w-full justify-start gap-2">
+              <ListOrderedIcon size={16} />
+              Catálogo
+            </Button>
+          </div>
         </SheetContent>
       </Sheet>
 
